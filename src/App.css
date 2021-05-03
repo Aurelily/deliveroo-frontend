@@ -1,1 +1,161 @@
-/* Other rules */
+/* ---------------------
+GLOBALS
+------------------------ */
+:root {
+  --light-grey-text: #868a8a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2e3333;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  max-width: 1200px;
+  margin: auto;
+  /* background-color: yellow; */
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+h3 {
+  font-size: 18px;
+  line-height: 16px;
+}
+/* ---------------------
+HEADER
+------------------------ */
+.header {
+  background-color: rgb(179, 221, 193);
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* ---- Top Bar ----*/
+.topBar {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  height: 60px;
+  border-bottom: 1px solid #e9ebeb;
+  width: 100%;
+}
+
+.logo {
+  height: 80%;
+  margin-left: 20px;
+}
+
+/* ---- Resto top infos ----*/
+
+.restoTopInfos {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  /* max-width: 1200px; */
+  background-color: aqua;
+  padding: 30px 0px;
+}
+
+.pictureTop img {
+  width: 350px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.text-desc {
+  font-size: 19px;
+  color: #868a8a;
+}
+
+/* ---------------------
+CONTENT 
+------------------------ */
+.content {
+  background-color: #f2f5f5;
+  height: 100%;
+  width: 100vw;
+}
+
+/* ---- Menus ----*/
+
+.menus {
+  width: 70%;
+  background-color: rgb(216, 187, 223);
+}
+.menuItemsContainer {
+  display: flex;
+}
+
+.menu-items {
+  background-color: red;
+}
+
+.menu-item {
+  width: 50%;
+  min-width: 300px;
+  /* padding: 0 25px 0 0; */
+}
+
+.menu-item-card {
+  border-radius: 5px;
+  background-color: white;
+  height: 160px;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  cursor: pointer;
+}
+.card-text {
+  margin-right: 10px;
+}
+
+.card-infos {
+  display: flex;
+  align-items: center;
+}
+
+.card-text-desc {
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+  font-size: 14px;
+  color: var(--light-grey-text);
+  line-height: 20px;
+}
+.card-picture {
+}
+.card-picture img {
+  height: 130px;
+  width: 130px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* ---- Cart ----*/
+
+.cart {
+  width: 30%;
+  background-color: pink;
+}
