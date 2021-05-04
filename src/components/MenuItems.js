@@ -22,16 +22,18 @@ const MenuItems = ({
               className="menu-item"
               onClick={() => {
                 cartOn === false && setCartOn(true);
-                console.log(cartOn);
+                console.log(counter);
                 newCartTab.push(
                   <CartItem
                     id={menuItem.id}
                     counter={counter}
                     setCounter={counter}
+                    itemTitle={menuItem.title}
                   />
                 );
-                setCounter(counter);
+
                 setCartTab(newCartTab);
+                setCounter(counter + 1);
               }}
             >
               <div className="menu-item-card">

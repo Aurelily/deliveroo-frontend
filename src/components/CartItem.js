@@ -1,6 +1,4 @@
-import { useState } from "react";
-
-const CartItem = ({ id, counter, setCounter }) => {
+const CartItem = ({ itemTitle, counter }) => {
   return (
     <div className="cart-item">
       <div className="cart-line">
@@ -10,7 +8,7 @@ const CartItem = ({ id, counter, setCounter }) => {
 
           <button className="btCounter">+</button>
         </div>
-        <span className="cart-item-name">Item name</span>
+        <span className="cart-item-name">{itemTitle}</span>
         <span className="cart-amount">25,00€</span>
       </div>
     </div>

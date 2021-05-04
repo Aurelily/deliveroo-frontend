@@ -1,6 +1,6 @@
 import CartItem from "./CartItem";
 
-const Cart = ({ cartOn, newCartTab, counter, setCounter }) => {
+const Cart = ({ cartOn, newCartTab, counter, setCounter, itemTitle }) => {
   return (
     <div className="cart">
       <div className="cartCard">
@@ -18,6 +18,7 @@ const Cart = ({ cartOn, newCartTab, counter, setCounter }) => {
                     key={index}
                     counter={counter}
                     setCounter={setCounter}
+                    itemTitle={itemTitle}
                   />
                 );
               })}

@@ -18,6 +18,7 @@ function App() {
   const [cartTab, setCartTab] = useState([]);
   const newCartTab = [...cartTab];
   const [cartOn, setCartOn] = useState(false);
+  const [counter, setCounter] = useState(0);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -59,7 +60,12 @@ function App() {
               }
             })}
           </div>
-          <Cart cartOn={cartOn} />
+          <Cart
+            cartOn={cartOn}
+            newCartTab={newCartTab}
+            counter={counter}
+            setCounter={setCounter}
+          />
         </div>
       </div>
     </div>
