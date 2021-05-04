@@ -1,18 +1,20 @@
+import { useState } from "react";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import CartItem from "./CartItem";
 
 const MenuItems = ({
   data,
   menuItems,
+  newCartTab,
+  setCartTab,
   cartOn,
   setCartOn,
-  cartTab,
-  setCartTab,
 }) => {
+  const [counter, setCounter] = useState(0);
   return (
     <div className="menu-items">
       <h2>{data && menuItems.name}</h2>
-      <div className="menuItemsContainer">
+      <div className="meals">
         {menuItems.meals.map((menuItem) => {
           return (
             <div
@@ -21,8 +23,15 @@ const MenuItems = ({
               onClick={() => {
                 cartOn === false && setCartOn(true);
                 console.log(cartOn);
-                // cartOn && cartTab.push(<CartItem />);
-                // console.log(cartTab);
+                newCartTab.push(
+                  <CartItem
+                    id={menuItem.id}
+                    counter={counter}
+                    setCounter={counter}
+                  />
+                );
+                setCounter(counter);
+                setCartTab(newCartTab);
               }}
             >
               <div className="menu-item-card">
