@@ -1,12 +1,12 @@
 const Footer = () => {
   return (
     <div className="footer">
-      Deliveroo inspiration : One page for ReactJS cart demo by
+      Deliveroo clone : ReactJS shopping cart operation demo by
       <p>
         <a href="https://github.com/Aurelily" target="_blank" rel="noreferrer">
           Aurélie PREAUD
         </a>{" "}
-        - Project for{" "}
+        - Made at{" "}
         <a href="https://www.lereacteur.io/" target="_blank" rel="noreferrer">
           Le Reacteur
         </a>
