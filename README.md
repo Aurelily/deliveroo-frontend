@@ -2,7 +2,7 @@ DELIVEROO Clone 🥯 🍔
 -----------------
  
 📆 Build in : May 2021.   
-🖥 Type : Web ReactJS Frontend demo project.   
+🖥 Type : Web ReactJS Responsive Frontend demo project.   
 🔗 Netlify - Check functional demo [here](https://lily-deliveroo.netlify.app/).   
 
 -----------------
@@ -14,13 +14,20 @@ Overview
 ⚙️ Features availables : You can add products in cart, modify quantity, total price and cart validation.  
 
 ---
-![deliveroo01](https://res.cloudinary.com/lilycloud/image/upload/v1625041614/Git%20ReadMe/Deliveroo/deliveroo01_fp3hvs.png)
-![deliveroo02](https://res.cloudinary.com/lilycloud/image/upload/v1625041614/Git%20ReadMe/Deliveroo/deliveroo02_gnv0bk.png). 
+
+<table>
+  <tr>
+    <td><img src="https://res.cloudinary.com/lilycloud/image/upload/v1625041614/Git%20ReadMe/Deliveroo/deliveroo01_fp3hvs.png"  alt="deliveroo01"></td>
+    <td><img src="https://res.cloudinary.com/lilycloud/image/upload/v1625041614/Git%20ReadMe/Deliveroo/deliveroo02_gnv0bk.png"  alt="deliveroo02"></td>
+  </tr>
+
+  </table>
+  
 
 
 🚀 Tasks performed
 ---
-* Complete integration
+* Complete responsive design integration
 * I create backend API to fetch datas [here](https://github.com/Aurelily/deliveroo-backend)
 * Use ReactJS Hooks
 * Complete cart and quantity counter features
@@ -30,6 +37,7 @@ Overview
 * Javascript
 * ReactJS
 * HTML5
+* Responsive design
 * CSS3
 
 💻 Installation
