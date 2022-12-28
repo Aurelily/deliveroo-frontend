@@ -30,7 +30,7 @@ function App() {
   let total = 0;
 
   // const url = "http://localhost:3200/";
-  const url = "https://lily-deliveroo-backend.herokuapp.com/";
+  const url = "https://deliveroo-express.vercel.app/";
 
   useEffect(() => {
     const fetchData = async () => {
@@ -99,7 +99,7 @@ function App() {
     </div>
   ) : (
     <div className="App">
-      {showModal && <Modal showModal={showModal} setShowModal={setShowModal} />}
+      {showModal && <Modal setShowModal={setShowModal} />}
       <Header data={data} />
       <Hero data={data} />
       <div className="content">
